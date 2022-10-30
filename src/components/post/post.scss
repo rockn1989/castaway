@@ -1,0 +1,71 @@
+@use "../../app/vars";
+
+.post {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 40px 20px;
+
+  @media (min-width: vars.$desk-w) {
+    gap: 53px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+  }
+
+  &__tags {
+    margin-bottom: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+
+    span {
+      display: block;
+      padding: 0 16px;
+      border-radius: 6px;
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 27px;
+      background-color: vars.$black;
+    }
+  }
+
+  &__img {
+    text-align: center;
+
+    @media (min-width: vars.$tablet-w) {
+      text-align: left;
+    }
+  }
+
+  &__episode {
+    margin-bottom: 18px;
+
+    a {
+      color: vars.$lightGreen;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+
+    @media (min-width: vars.$desk-w) {
+      font-size: 64px;
+      line-height: 70px;
+      letter-spacing: 2.56px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 18px;
+    color: vars.$lightWhite;
+    font-size: 22px;
+    line-height: 33px;
+
+    p {
+      margin-bottom: 18px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use '../../app/vars';
+
+.reviews-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 16px;
+
+  @media (min-width: vars.$desk-w) {
+    grid-template-columns: repeat(3, minmax(270px, 1fr));
+  }
+
+  &__item {
+    padding: 20px;
+    background-color: #000000;
+
+    @media (min-width: vars.$desk-w) {
+      padding: 35px;
+    }
+
+    @media (min-width: vars.$desk-w-lg) {
+      padding: 50px;
+    }
+  }
+}
