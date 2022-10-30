@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 
-import PageWrapper from '../components/page-wrapper/page-wrapper';
+import PageWrapper from '../page-wrapper/page-wrapper';
 
 const App = () => {
   return (
