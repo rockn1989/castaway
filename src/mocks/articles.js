@@ -1,23 +1,34 @@
+// Расширение файла должно быть .ts
+
+/*
+ * Лучше называть моки, чтобы было понятно
+ * Типа const MockArticles = [];
+ * И потом внизу делать export {MockArticles}
+ */
+
 export default [
   {
-    title: "Should you get outboard audio gear?",
-    text: "Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.",
+    title: 'Should you get outboard audio gear?',
+    text:
+      'Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.',
     episode: 3,
-    previewImg: "/images/media/post-img-1.jpg",
-    tags: ["Gear"]
+    previewImg: '/images/media/post-img-1.jpg',
+    tags: ['Gear'],
   },
   {
-    title: "Mic tricks to take you to the next level",
-    text: "Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.",
+    title: 'Mic tricks to take you to the next level',
+    text:
+      'Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.',
     episode: 2,
-    previewImg: "/images/media/post-img-2.jpg",
-    tags: ["Tips & Tricks"]
+    previewImg: '/images/media/post-img-2.jpg',
+    tags: ['Tips & Tricks'],
   },
   {
-    title: "The best microphone under $200",
-    text: "With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.",
+    title: 'The best microphone under $200',
+    text:
+      'With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.',
     episode: 1,
-    previewImg: "/images/media/post-img-3.jpg",
-    tags: ["Gear"]
-  }
-];
+    previewImg: '/images/media/post-img-3.jpg',
+    tags: ['Gear'],
+  },
+]
