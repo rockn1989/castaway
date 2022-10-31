@@ -1,4 +1,4 @@
-export default [
+const ReviewArticles = [
   {
     text: 'I can’t recommend this podcast enough',
     author: 'Betty Lacey'
@@ -23,4 +23,7 @@ export default [
     text: 'I’ve upped my game considerably since I started listening',
     author: 'Steven Blast'
   },
-]
+];
+
+export { ReviewArticles };
+

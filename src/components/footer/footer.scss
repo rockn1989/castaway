@@ -13,22 +13,10 @@
     gap: 20px;
   }
 
-  .left-column {
-    @media (max-width: #{vars.$tablet-w - 1px}) {
-      grid-column: 1/4;
-    }
-  }
-
   .middle-column {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-
-  .right-column {
-    @media (max-width: #{vars.$mob-s - 1px}) {
-      grid-column: 1/4;
-    }
   }
 
   .logo {

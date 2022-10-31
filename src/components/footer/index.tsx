@@ -1,9 +1,9 @@
 import React from 'react'
-import MusicList from '../music-list/music-list';
-import SocList from '../soc-list/soc-list';
+import { MusicList } from '../MusicList';
+import { SocList } from '../SocList';
 import './footer.scss';
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className='page-footer'>
       <div className="container">
@@ -38,6 +38,4 @@ const Footer = () => {
       </div>
     </footer>
   )
-}
-
-export default Footer
+};

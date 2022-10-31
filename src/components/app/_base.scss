@@ -10,6 +10,7 @@ body {
   background-color: #ffffff;
   background-color: vars.$black;
   color: #ffffff;
+  min-width: 320px;
 }
 
 * {
@@ -56,7 +57,7 @@ h2,
 
 a {
   text-decoration: none;
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 
   &:hover {
     color: vars.$lightGreen;
@@ -160,7 +161,7 @@ img {
   text-align: center;
   background-color: vars.$lightGreen;
   border-radius: 6px;
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
   border: none;
   cursor: pointer;
 
@@ -180,7 +181,7 @@ img {
   align-items: center;
   justify-content: center;
   background-color: vars.$lightGreen;
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
 
   @media (min-width: vars.$tablet-w) {
     padding: 20px;

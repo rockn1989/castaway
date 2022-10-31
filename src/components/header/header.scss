@@ -62,7 +62,7 @@
       @media (max-width: #{vars.$tablet-w - 1px}) {
         width: 100%;
         text-align: center;
-        transition: transform .3s ease;
+        transition: transform 0.3s ease;
         transform: rotateX(90deg);
 
         @for $i from 4 through 1 {
@@ -118,6 +118,12 @@
 }
 
 .mobile-button-menu {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+
   svg {
     width: 26px;
     height: 26px;

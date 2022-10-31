@@ -9,7 +9,7 @@ type PostProps = {
   text: string,
 };
 
-const Post: React.FC<PostProps> = ({ title, previewImg, tags, episode, text }) => {
+export const Post: React.FC<PostProps> = ({ title, previewImg, tags, episode, text }) => {
   return (
     <article className="post">
       <div className="post__img">
@@ -18,8 +18,8 @@ const Post: React.FC<PostProps> = ({ title, previewImg, tags, episode, text }) =
       <div className="post__desc">
         <div className="post__tags">
           {
-            tags.map((tag, id) => {
-              return <span key={id}>{tag}</span>
+            tags.map((tag, index) => {
+              return <span key={index}>{tag}</span>
             })
           }
         </div>
@@ -38,6 +38,4 @@ const Post: React.FC<PostProps> = ({ title, previewImg, tags, episode, text }) =
       </div>
     </article>
   )
-}
-
-export default Post;
+};

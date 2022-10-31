@@ -1,13 +1,13 @@
 import React from 'react'
-import MusicList from '../music-list/music-list';
-import ArticlesList from '../articles-list/articles-list';
-import SubscribeForm from '../subscribe-form/subscribe-form';
-import ReviewsList from '../reviews-list/reviews-list';
+import { MusicList } from '../MusicList';
+import { ArticlesList } from '../ArticlesList';
+import { SubscribeForm } from '../SubscribeForm';
+import { ReviewsList } from '../ReviewList';
 
 import './main-layout.scss';
 
 
-const MainLayout = () => {
+export const MainLayout = () => {
   return (
     <main className="page-main">
       <div className="container">
@@ -68,6 +68,4 @@ const MainLayout = () => {
       </div>
     </main>
   )
-}
-
-export default MainLayout
+};
