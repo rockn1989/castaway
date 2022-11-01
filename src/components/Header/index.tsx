@@ -18,11 +18,8 @@ const BurgerIcon = ({ mobileHandlerMenu }: BurgerIconProps) => {
 export const Header = () => {
   const [active, setActive] = useState(false);
 
-  const onMobileMenuClickHandler = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setActive((status) => {
-      return !status;
-    });
+  const onMobileMenuClickHandler = () => {
+    setActive((status) => !status);
   }
 
   return (

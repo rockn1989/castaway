@@ -6,7 +6,7 @@ type ReviewItemProps = {
   author: string
 };
 
-export const ReviewItem: React.FC<ReviewItemProps> = ({ text, author }) => {
+export const ReviewItem = ({ text, author }: ReviewItemProps) => {
   return (
     <div className="review">
       <div className="review__rating" />
